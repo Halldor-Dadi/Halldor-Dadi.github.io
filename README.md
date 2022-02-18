@@ -1,1 +1,1 @@
-# halldor-dadi.github.io
+# Halldor-Dadi.github.io
