@@ -1,0 +1,174 @@
+
+*{box-sizing: border-box;}
+
+body, html{
+    height: 100vh;
+}
+
+.col-2{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "navlisti hlekkir" ;
+}
+
+.litur1{
+    background-image: linear-gradient(to bottom, #D4145A 0%, #FBB03B 100%);
+}
+
+.litur2{
+    background-image: linear-gradient(to bottom, #2E3192 0%, #1BFFFF 100%);
+}
+
+nav{
+    grid-area: nav;   
+}
+
+.efnisyfirlit{
+    grid-area: navlisti;
+}
+
+.Hlekkir{
+    grid-area: hlekkir;
+}
+
+header{
+    grid-area: haus;
+}
+
+article{
+    grid-area: grein;
+    padding: 5px;
+}
+
+.aside1{
+    grid-area: hlid1;
+    padding: 5px;
+}
+
+.aside2{
+    grid-area: hlid2;
+    padding: 5px;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.col-3{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "listi innri ytri";
+}
+
+body{
+    margin: 0;
+	display:grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"nav"
+	"haus"
+	"main"
+	"footer";
+}
+
+nav, header, footer{text-align: center;}
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+    "grein"
+    "hlid_1"
+    "hlid_2";
+}
+
+dl{
+    grid-area: listi;
+}
+
+.innri_tenglar{
+    grid-area: innri;
+}
+
+.ytri_tenglar{
+    grid-area: ytri;
+}
+
+@media only screen and (min-width: 37.5em){
+    body{
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 15% auto 10%;
+    }
+
+    nav{
+        display: grid;
+        grid-template-columns:2fr 2fr 2fr;
+        grid-template-rows: auto;
+	    grid-template-areas:
+	    "navlisti hlekkir";
+    }
+
+    main{
+        grid-template-areas: 
+        "grein grein"
+        "hlid1 hlid2";
+    }
+
+    footer{
+        color: black;
+        text-align: center;
+        padding: 10px 175px 10px 175px;
+        grid-template-areas: 
+        "list"
+        "innri"
+        "ytri";
+    }
+
+    
+}
+
+@media only screen and (min-width: 48em){
+    body{
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 15% auto 10%;
+    }
+
+    nav{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "efnisyfirlit hlekkir";
+    }
+
+    footer{
+        grid-template-areas: 
+        "listi innri ytri";
+    }
+}
+
+@media only screen and (min-width: 60em){
+    body{margin: 0 auto;
+        max-width:60em;
+        
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 15% auto 15%;
+        
+    }
+    
+    main{
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+	    grid-template-areas:
+        "grein hlid1 hlid2";
+    }
+}
+
+
+
+
+
+
