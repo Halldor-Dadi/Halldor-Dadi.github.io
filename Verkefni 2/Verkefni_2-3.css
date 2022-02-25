@@ -1,0 +1,73 @@
+/*
+  ========================================
+  Box-sizing
+  ========================================
+*/
+*{
+    box-sizing: border-box;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+} 
+
+.group{
+    font-size: 16px;
+    font-family: Georgia, serif;    
+}
+
+
+.box{
+    width: 40%;
+    padding: 20px;
+    border: solid black 1px;
+    display: Grid;
+}
+
+section{
+    float: left;
+}
+
+.texti_hægri{
+    text-align: right;
+    background-color: grey  ;
+}
+
+.bigL{
+    float: left;
+    font-size: 45px;
+    margin-right: 20px;
+    }
+
+.imgR{
+    float: right;
+    }
+
+img{
+    padding: 10px;
+}
+.athugid{
+    background-color: yellow;
+    text-align: center;
+}
+
+section{
+    width: auto;
+    padding: 20px;
+    border: solid black 1px;
+    display: Grid;
+}
