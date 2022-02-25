@@ -1,0 +1,51 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    max-width: 60em;
+    margin: 0 auto;
+    font-family: Serif ;
+}
+
+.rammi{
+    border: 1px solid;
+    padding: 15px;   
+    margin: 10px;
+    display: grid;
+    grid-gap: 10px;
+}
+
+@media screen and (min-width: 37.5em){
+.dálkar-2, .dálkar-3, .dálkar-4{
+    grid-template-columns: 1fr;
+}
+}
+
+@media screen and (min-width: 48em){
+.dálkar-2, .dálkar-3{
+    grid-template-columns: 1fr;
+}
+        
+.dálkar-4{
+    grid-template-columns: 1fr 1fr;
+}
+}        
+
+
+@media screen and (min-width: 60em){
+.dálkar-2{
+    grid-template-columns: 1fr 1fr;
+} 
+    
+.dálkar-3{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+    
+.dálkar-4{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+}
+*/
+
+
