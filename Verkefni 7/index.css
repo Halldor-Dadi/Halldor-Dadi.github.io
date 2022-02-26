@@ -1,0 +1,173 @@
+*{box-sizing: border-box;}
+
+body,html{
+    margin: 0; 
+    height: auto;
+}
+
+img{
+    max-width: 100%; 
+    height: auto;
+}
+
+body{
+    background: linear-gradient(to bottom, #23444B 0%, #152238 100%);
+    color: grey;
+    font-size: 20px;
+    font-family: serif;
+}
+
+header{
+    background-image: url(Uncharted-4_480px.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 28px;
+}
+
+.link{
+    color:#ADD8E6;
+    font-family: 'Playfair Display', serif;
+}
+
+.innerlinks{
+    border-radius: 8px;
+    display: block;
+    padding:15px;
+    margin:5px;
+    border:3px solid black;
+    border-spacing: 15px;
+    text-align: center;
+}
+
+.kort_mynd{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    text-align: center;
+}
+
+
+.col-3{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+ul{
+    list-style: none;
+}
+
+.pila{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    font-size: 2em;
+    background-color: white;
+    color: blue;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+@media screen and (min-width: 37.5em){
+    header{
+        background-image: url(Uncharted-4_960px.jpg);
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 28px;
+    }
+
+    .kort_mynd{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+        text-align: center;
+    }
+    
+    
+    .col-3{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (min-width: 48em){
+    header{
+        background-image: url(Uncharted-4_1280px.jpg);
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 28px;
+    }
+
+    .innerlinks{
+        border-radius: 8px;
+        display: inline-block;
+        padding:15px;
+        margin:5px;
+        border:3px solid black;
+        border-spacing: 15px;
+        text-align: center;
+    }
+    
+    .kort_mynd{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        text-align: center;
+    }
+    
+    
+    .col-3{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 60em){
+    header, nav,  main, footer{
+        margin: 0 auto;
+        max-width: 60em;
+    }
+
+    header{
+        background-image: url(Uncharted-4_2000px.jpg);
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 28px;
+    }
+
+    .innerlinks{
+        border-radius: 8px;
+        display: inline-block;
+        padding:25px;
+        margin:5px;
+        border:3px solid black;
+        border-spacing: 15px;
+    }
+    .kort_mynd{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+
+    .col-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+}
